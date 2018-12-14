@@ -61,3 +61,22 @@ Servir <- function(x,y,z,j){
     return("iiiuuuu... esto no estÃ¡ listo")
   }
 }
+
+
+
+
+#Tarea Desayuno
+
+Cortar("naranjas")
+Preparar("naranjas cortadas")
+Cortar("palta")
+Moler("palta cortada")
+Cortar("pan")
+Preparar("huevos" , "harina")
+CalentarSarten()
+Preparar("masa de panqueques","sartén caliente")
+Rellenar("panqueques")
+Calentar("pan cortado")
+Preparar("pan tostado","palta molida")
+Calentar("cafe")
+Servir("pan tostado con palta","panqueques con manjar","jugo de naranjas","cafe caliente")
