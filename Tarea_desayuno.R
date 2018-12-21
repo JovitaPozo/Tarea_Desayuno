@@ -51,7 +51,7 @@ Cortar <- function(x){
 }
 
 CalentarSarten <- function(){
-  return("sartÃ©n caliente")
+  return("sartén caliente")
 }
 
 Servir <- function(x,y,z,j){
@@ -68,15 +68,15 @@ Servir <- function(x,y,z,j){
 #Tarea Desayuno
 
 Cortar("naranjas")
-Preparar("naranjas cortadas")
+Preparar(Cortar("naranjas"))
 Cortar("palta")
-Moler("palta cortada")
+Moler(Cortar("palta"))
 Cortar("pan")
-Preparar("huevos" , "harina")
+Preparar("huevos", "harina")
 CalentarSarten()
-Preparar("masa de panqueques","sartén caliente")
-Rellenar("panqueques")
-Calentar("pan cortado")
-Preparar("pan tostado","palta molida")
+Preparar (Preparar("huevos", "harina") , CalentarSarten())
+Rellenar(Preparar (Preparar("huevos", "harina") , CalentarSarten()))
+Calentar(Cortar ("pan"))
+Preparar(Calentar(Cortar ("pan")), Moler(Cortar("palta")))
 Calentar("cafe")
-Servir("pan tostado con palta","panqueques con manjar","jugo de naranjas","cafe caliente")
+Servir(Preparar(Calentar(Cortar ("pan")), Moler(Cortar("palta"))), Rellenar(Preparar (Preparar("huevos", "harina") , CalentarSarten())), Preparar(Cortar("naranjas")), Calentar("cafe"))
